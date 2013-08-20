@@ -1,9 +1,9 @@
 {% from "utils.html" import analytics %}
-<!DOCTYPE html>
+
 <html>
 <head>
 	<meta charset="utf-8">
-	{% block head %}{% endblock %}
+	{% block head %}{% endlock %}
 	<title>{% block title %}{{ site.name }}{% endblock %}</title>
 	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ static_url("css/style.css") }}" type="text/css" />
@@ -20,7 +20,7 @@
     	margin:10px;
     }
     p{
-        font-size: 25px;
+        font-size: 20px;
     }
     </style>
 </head>
@@ -28,27 +28,12 @@
 <body>
 <header>
 <div>
-	<img src="http://farm4.staticflickr.com/3752/9436685808_ff3fd6be7c_q.jpg" class="img-circle" style= "display:inline">
+	<img src="theme.imge_path" class="img-circle" style= "display:inline">
     <h3 style= "display:inline">{{ site.description }}</h3>
 </div>
 </header>
-{% block content %}
-{% for post in pagination.items %}
-<div class="span9 box">
-    <legend>
-        <h2 class="article_title title"><a href="{{ url_for(post) }}">{{ post.title }}</a></h2>
-    </legend>
-    <div class="text">
-        <p>{{ post.content }}</p>
-    </div>
-    <hr/>
-    <div class="meta">
-        <span>tagged:</span>
-        {% for tag in post.tags %}
-        <a class="tag" href="{{ url_for(tag) }}">{{ tag.name }}</a>
-        {% endfor %}
-        <p style="float: right;font-size: 15px">{{ post.date }}</p>
-    </div>
+<div id="content">
+    {% block content %}
+    {% endblock %}
 </div>
-{% endfor %}
-{% endblock %}
+</body>

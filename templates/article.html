@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{ name }} | {{ site.name }}
+{% endblock %}
+
+{% block content %}
+<div class="span9 box">
+    <legend>
+        <h2 class="article_title title"><a href="{{ url_for(post) }}">{{ post.title }}</a></h2>
+    </legend>
+    <div class="text">
+        <p>{{ post.content }}</p>
+    </div>
+    <hr/>
+    <div class="meta">
+        <span>tagged:</span>
+        {% for tag in post.tags %}
+        <a class="tag" href="{{ url_for(tag) }}">{{ tag.name }}</a>
+        {% endfor %}
+        <p style="float: right;font-size: 15px">{{ post.date }}</p>
+    </div>
+</div>
+{% endblock %}
