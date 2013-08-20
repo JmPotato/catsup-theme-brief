@@ -17,7 +17,7 @@ Requires catsup 0.0.6+
 The easy way using `catsup install` :
 ```bash
 cd /path/to/your/blog
-catsup install git://github.com/whtsky/catsup-theme-brief.git
+catsup install git://github.com/JmPotato/catsup-theme-brief.git
 ```
 
 The hard way using git manually:
