@@ -23,12 +23,17 @@
     p{
         font-size: 18px;
     }
+    .align-center{  
+        margin:0 auto;
+        width:500px;
+        text-align:center;
+    }
     </style>
 </head>
 
 <body>
 <header>
-<div>
+<div class="header">
 	<img src= "{{ author.email | gravatar }}" class="img-circle" style= "display:inline">
     <h3 style= "display:inline">{{ site.description }}</h3>
 </div>
@@ -36,5 +41,12 @@
 <div id="content">
     {% block content %}
     {% endblock %}
+</div>
+<div class="footer">
+    <div class="copyright align-center">
+        Powered by <a href="https://github.com/whtsky/catsup">CATSUP</a>
+        <span>&bull;</span>
+        Brief Theme by <a href="https://github.com/JmPotato">JmPotato</a>
+    </div>
 </div>
 </body>
