@@ -1,37 +1,5 @@
-{% from "utils.html" import analytics %}
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	{% block head %}{% endblock %}
-	<title>{% block title %}{{ site.name }}{% endblock %}</title>
-	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ static_url("css/style.css") }}" type="text/css" />
-    <link rel="stylesheet" href="{{ static_url("css/pygments_style.css") }}" type="text/css" />
-    <link rel="alternate" type="application/rss+xml" href="{{ url_for('feed') }}" title="{{ site.name }}" />
-    {{ analytics() }}
-    <style>
-    body{
-    	background-color: #fff;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    div{
-    	margin:10px;
-    }
-    p{
-        font-size: 20px;
-    }
-    </style>
-</head>
+{% extends 'layout.html' %}
 
-<body>
-<header>
-<div>
-	<img src="http://farm4.staticflickr.com/3752/9436685808_ff3fd6be7c_q.jpg" class="img-circle" style= "display:inline">
-    <h3 style= "display:inline">{{ site.description }}</h3>
-</div>
-</header>
 {% block content %}
 {% for post in pagination.items %}
 <div class="span9 box">
