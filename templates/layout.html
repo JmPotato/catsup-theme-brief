@@ -28,7 +28,7 @@
 <body>
 <header>
 <div>
-	<img src="theme.imge_path" class="img-circle" style= "display:inline">
+	<img src= {{ author.email | gravatar }} class="img-circle" style= "display:inline">
     <h3 style= "display:inline">{{ site.description }}</h3>
 </div>
 </header>
