@@ -12,7 +12,7 @@ Online demo:Coming soon.
 Installation
 --------------
 
-Requires catsup 0.0.6+
+Requires catsup 0.0.9+
 
 The easy way using `catsup install` :
 ```bash
