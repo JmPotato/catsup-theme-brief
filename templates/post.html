@@ -28,4 +28,11 @@
     </div>
     {% endif %}
 </div>
+<div class="span9 box">
+    <legend>
+        <h3 class="comment">评论</h3>
+    </legend>
+        {% from 'utils.html' import render_comment %}
+        {{ render_comment(post) }}
+</div>
 {% endblock %}
