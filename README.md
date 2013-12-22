@@ -7,7 +7,7 @@ Overview
 This is a theme for [catsup](https://github.com/whtsky/catsup).
 It's designed and created by [JmPotato](https://github.com/JmPotato).
 
-Online demo:Coming soon.
+Online demo:[JmPotato's Blog](http://ipotato.me)
 
 Installation
 --------------
