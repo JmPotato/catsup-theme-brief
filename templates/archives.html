@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Archives | {{ site.name }}
+{% endblock %}
+
+{% block content %}
+<div class="span9 box">
+    <legend><h2>All Archives</h2></legend>
+    {% for archive in archives %}
+    <h2>{{ archive.year }}</h2>
+    {% for post in archive.posts %}
+        <li>
+            <h3><span class="meta">{{ post.date }}</span><a href="{{ url_for(post) }}">{{ post.title }}</a></h3>
+        </li>
+    {% endfor %}
+    {% endfor %}
+</div>
+{% endblock %}

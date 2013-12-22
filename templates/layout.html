@@ -41,6 +41,10 @@
 <div class="header">
 	<img src= "{{ author.email | gravatar }}" class="img-circle" style= "display:inline">
     <h3 style= "display:inline">{{ site.description }}</h3>
+    <a style="float:right" href="{{ url_for("archives") }}">Archives</a>
+    {% for page in pages %}
+    <a href="{{ url_for(page) }}">{{ page.title }}</a>
+    {% endfor %}
 </div>
 </header>
 <div id="content">
