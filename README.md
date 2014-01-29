@@ -7,12 +7,10 @@ Overview
 This is a theme for [catsup](https://github.com/whtsky/catsup).
 It's designed and created by [JmPotato](https://github.com/JmPotato).
 
-Online demo:[JmPotato's Blog](http://ipotato.me)
-
 Installation
 --------------
 
-Requires catsup 0.0.9+
+Requires catsup 0.1.0+
 
 The easy way using `catsup install` :
 ```bash
