@@ -15,14 +15,5 @@ Requires catsup 0.1.0+
 The easy way using `catsup install` :
 ```bash
 cd /path/to/your/blog
-catsup install git://github.com/JmPotato/catsup-theme-brief.git
-```
-
-The hard way using git manually:
-```bash
-cd /path/to/your/blog
-mkdir themes
-cd themes
-git clone git://github.com/whtsky/catsup-theme-brief.git
-mv catsup-theme-brief brief
+catsup install brief
 ```
